@@ -1,0 +1,15 @@
+{
+  "country abbreviation": "type:String",
+  "places": [
+    {
+      "place name": "type:String",
+      "longitude": "type:String",
+      "post code": "type:String",
+      "latitude": "type:String"
+    }
+  ],
+  "country": "type:String",
+  "place name": "${zipCode.city}",
+  "state": "type:String",
+  "state abbreviation": "${zipCode.state}"
+}
