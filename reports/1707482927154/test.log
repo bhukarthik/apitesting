@@ -1,0 +1,35 @@
+[2024-02-09 12:48:47] [1] [INFO] [TestNG] Running:
+  C:\Users\karth\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[2024-02-09 12:48:51] [1] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/worldtime?city=&X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Request params:	<none>
+Query params:	X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Content-Length: 32
+Connection: keep-alive
+Date: Fri, 09 Feb 2024 12:48:51 GMT
+x-amzn-RequestId: eb1bb127-371e-4763-9fb3-c354df977245
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S3nQDGjIvHcEiGw=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c61f33-72ef6fe52eba29f95e1def7f;Sampled=0;lineage=4930cb4b:0
+X-Cache: Error from cloudfront
+Via: 1.1 8a2c86277035e206275b398626c28834.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: ATL59-P2
+X-Amz-Cf-Id: kwCKqfAZ2Me1r6K8OF2DEA70EEHkC6-_qiznB2BAqfPQFab2NzAZxA==
+
+{
+    "error": "Invalid parameters."
+}
+

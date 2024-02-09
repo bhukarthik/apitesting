@@ -1,0 +1,45 @@
+[2024-02-09 12:52:40] [1] [INFO] [TestNG] Running:
+  C:\Users\karth\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[2024-02-09 12:52:45] [1] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/planets?name=Neptune&X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Request params:	<none>
+Query params:	X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 209
+Connection: keep-alive
+Date: Fri, 09 Feb 2024 12:52:45 GMT
+x-amzn-RequestId: 2d42604a-b4a7-4cc6-9f3c-564fdb3c67cf
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S3n0iGrlPHcEv6w=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c6201c-41a6c6713e9423b42970a404;Sampled=0;lineage=2719e223:0
+X-Cache: Miss from cloudfront
+Via: 1.1 e7803a00a023f1e04faef1ed4f572ace.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD55-P4
+X-Amz-Cf-Id: LMvewDOi_ApdwWM9m9orggiPSZeMPadZr4jk9D-RZ-QvxFgyNYQcMQ==
+
+[
+    {
+        "name": "Neptune",
+        "mass": 0.0537,
+        "radius": 0.346,
+        "period": 59800.0,
+        "semi_major_axis": 30.07,
+        "temperature": 72.0,
+        "distance_light_year": 0.000478,
+        "host_star_mass": 1.0,
+        "host_star_temperature": 6000.0
+    }
+]
+

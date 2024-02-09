@@ -1,0 +1,12 @@
+{
+  "timezone": "type:String",
+  "datetime": "type:String",
+  "date": "type:String",
+  "year": "type:String",
+  "month": "type:String",
+  "day": "type:String",
+  "hour": "type:String",
+  "minute": "type:String",
+  "second": "type:String",
+  "day_of_week": "type:String"
+}

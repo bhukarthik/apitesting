@@ -1,0 +1,46 @@
+[2024-02-09 12:59:05] [1] [INFO] [TestNG] Running:
+  C:\Users\karth\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[2024-02-09 12:59:09] [1] [INFO] Request method:	GET
+Request URI:	https://api.zippopotam.us/us/84020
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 09 Feb 2024 12:59:09 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-cache: hit
+charset: UTF-8
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2wkPkJSSP26PwIOJNY0OjhKcofHGRfDE9PV2KZXmirqKe0FmDss2zynnYQMm%2BdfvKl%2BvfNEM8gR5ul24J1QSKmlDRI4dh%2Bc0Iela47TxAyMYNEhivTzoH5wUtx69Ds2DjUP7DA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+access-control-allow-origin: *
+Server: cloudflare
+CF-RAY: 852c49bab8580803-ATL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "post code": "84020",
+    "country": "United States",
+    "country abbreviation": "US",
+    "places": [
+        {
+            "place name": "Draper",
+            "longitude": "-111.881",
+            "state": "Utah",
+            "state abbreviation": "UT",
+            "latitude": "40.5046"
+        }
+    ]
+}
+

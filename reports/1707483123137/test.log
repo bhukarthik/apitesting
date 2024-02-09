@@ -1,0 +1,44 @@
+[2024-02-09 12:52:03] [1] [INFO] [TestNG] Running:
+  C:\Users\karth\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[2024-02-09 12:52:08] [1] [INFO] Request method:	GET
+Request URI:	https://api.api-ninjas.com/v1/worldtime?city=chennai&X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Request params:	<none>
+Query params:	X-Api-key=G4hpBIkdkweexxXDu1lTuZlT4VQP3aLW7GHBCANN
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 200
+Connection: keep-alive
+Date: Fri, 09 Feb 2024 12:52:09 GMT
+x-amzn-RequestId: d33fe4f0-6c8f-41f0-95b6-33999a30d237
+Access-Control-Allow-Origin: *
+Allow: GET, OPTIONS, POST
+Access-Control-Allow-Headers: *
+x-amz-apigw-id: S3nuuEjZPHcEu9w=
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+X-Amzn-Trace-Id: Root=1-65c61ff7-5e1c12c53a6576204424fab0;Sampled=0;lineage=4930cb4b:0
+X-Cache: Miss from cloudfront
+Via: 1.1 b72ec90bfb3598795e1ec469cc868742.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD55-P4
+X-Amz-Cf-Id: 7NLcO02xXkKQXrCHNTOW6Dtvzu2Jc6lX9gglA5_P3kp9WrRfwlLXTA==
+
+{
+    "timezone": "Asia/Kolkata",
+    "datetime": "2024-02-09 18:22:09",
+    "date": "2024-02-09",
+    "year": "2024",
+    "month": "02",
+    "day": "09",
+    "hour": "18",
+    "minute": "22",
+    "second": "09",
+    "day_of_week": "Friday"
+}
+

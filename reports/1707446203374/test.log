@@ -1,0 +1,18 @@
+[2024-02-09 02:36:43] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== WebDriver configuration ===========
+browser=chrome
+selenium_url=http://192.168.7.195:4444/wd/hub
+-------------- Driver capabilities ------------
+===============================================
+
+[2024-02-09 02:36:43] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-09 02:36:45] [1] [INFO] [TestNG] Running:
+  C:\Users\karth\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[2024-02-09 02:36:45] [1] [INFO] Set thread-count=1
+[2024-02-09 02:36:45] [1] [INFO] Set data-provider-thread-count=1
+[2024-02-09 02:36:45] [1] [INFO] CARINA_CORE_VERSION: 1.2.6
+[2024-02-09 02:36:54] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-02-09 02:36:54] [1] [INFO] RESULT #1: TEST [apitesting - verifySearchLineTest] PASS [log=file://C:\Users\karth\Documents\Exam\apitesting\reports\1707446203374/a3ef6569-f512-47e9-a334-130c687cc66c/test.log]

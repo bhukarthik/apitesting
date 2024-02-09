@@ -1,0 +1,13 @@
+[
+  {
+    "name": "type:String",
+    "mass": "type:Double",
+    "radius": "type:Double",
+    "period": "type:Double",
+    "semi_major_axis": "type:Double",
+    "temperature": "type:Double",
+    "distance_light_year": "type:Double",
+    "host_star_mass": "type:Double",
+    "host_star_temperature": "type:Double"
+  }
+]
