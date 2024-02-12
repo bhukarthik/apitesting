@@ -14,6 +14,7 @@ public class ZipCode {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
+
     public String getCity() {
         return city;
     }
@@ -37,6 +38,4 @@ public class ZipCode {
     public void setCountry(String country) {
         this.country = country;
     }
-
-
 }

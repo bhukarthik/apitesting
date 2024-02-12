@@ -1,6 +1,0 @@
-[2024-02-09 02:37:21] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-02-09 02:37:21] [1] [INFO] TEST [apitesting - verifySearchLineTest] STARTED at [21:37:21 2024-02-08]
-[2024-02-09 02:37:21] [1] [INFO] Starting driver session...
-[2024-02-09 02:37:24] [1] [INFO] Driver session started.
-[2024-02-09 02:37:25] [1] [INFO] INFO: opening url 'https://foodlion.com'
-[2024-02-09 02:37:30] [1] [INFO] INFO: '**************** Test execution summary ****************'.

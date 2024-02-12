@@ -1,6 +1,0 @@
-[2024-02-09 12:36:18] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-02-09 12:36:18] [1] [INFO] TEST [apitesting - verifySearchLineTest] STARTED at [07:36:18 2024-02-09]
-[2024-02-09 12:36:18] [1] [INFO] Starting driver session...
-[2024-02-09 12:36:21] [1] [INFO] Driver session started.
-[2024-02-09 12:36:22] [1] [INFO] INFO: opening url 'https://www.ebay.com'
-[2024-02-09 12:36:27] [1] [INFO] INFO: '**************** Test execution summary ****************'.

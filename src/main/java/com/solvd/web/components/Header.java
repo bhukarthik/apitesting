@@ -7,12 +7,18 @@ import org.openqa.selenium.support.FindBy;
 
 public class Header extends AbstractUIObject {
 
-    public SearchLineComponents getSearchLineComponents() {
-        return searchLineComponents;
-    }
-
+    @FindBy(xpath = "//form[@id='gh-f']")
     private SearchLineComponents searchLineComponents;
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
+    public Header(WebDriver driver){
+        super(driver);
+    }
+    public SearchLineComponents getSearchLineComponents() {
+        return searchLineComponents;
+    }
+
+
+
 }
