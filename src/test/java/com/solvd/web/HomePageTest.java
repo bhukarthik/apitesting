@@ -3,17 +3,22 @@ package com.solvd.web;
 import com.solvd.web.components.SearchLineComponents;
 import com.zebrunner.carina.core.AbstractTest;
 import com.zebrunner.carina.utils.config.Configuration;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import java.util.ArrayList;
 
 public class HomePageTest extends AbstractTest {
 
     @DataProvider(name = "queryString")
     public static Object[][] queryString() {
         return new Object[][]{
-                {"Speakers"},
+                {"speakers"},
         };
     }
 
@@ -36,7 +41,7 @@ public class HomePageTest extends AbstractTest {
     }
 
     @Test(dataProvider = "queryString")
-    public void verifySearchLineTest(String queryString) {
+    public void verifySearchLineTest(String queryString) throws InterruptedException {
         WebDriver webDriver = getDriver();
         HomePage page = new HomePage(webDriver);
         page.open();
@@ -93,6 +98,34 @@ public class HomePageTest extends AbstractTest {
         searchLineComponents.clickRefurbishedPage();
         searchLineComponents.ClickCertifiedRefurbishedPage();
         searchLineComponents.clickListView();
+        sa.assertAll();
+    }
+
+    @Test
+    public void verifyNewTab() {
+        WebDriver webDriver = getDriver();
+        HomePage page = new HomePage(webDriver);
+        page.open();
+        webDriver.switchTo().newWindow(WindowType.TAB);
+        ArrayList<String> tabs = new ArrayList<String>(webDriver.getWindowHandles());
+        webDriver.switchTo().window(tabs.get(1)); //switches to new tab
+        String newTabUrl = String.valueOf(webDriver.switchTo().window(tabs.get(1)));
+        webDriver.get(page.getCurrentUrl());
+        webDriver.switchTo().window(tabs.get(0)); // switch back to main screen
+        SoftAssert sa = new SoftAssert();
+        String actualurl = Configuration.getRequired("home_url");
+        sa.assertEquals(newTabUrl, actualurl, "url does not match expected.");
+    }
+
+    @Test(dataProvider = "queryString")
+    public void verifySearchSuggestions(String query) throws InterruptedException {
+        WebDriver webDriver = getDriver();
+        HomePage page = new HomePage(webDriver);
+        page.open();
+        SearchLineComponents searchLineComponents = page.getHeader().getSearchLineComponents();
+        SoftAssert sa = new SoftAssert();
+        String searchValue = searchLineComponents.checkSearchSelection(query);
+        sa.assertEquals(query, searchValue);
         sa.assertAll();
     }
 }

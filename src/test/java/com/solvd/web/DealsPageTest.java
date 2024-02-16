@@ -17,6 +17,13 @@ public class DealsPageTest extends AbstractTest {
         };
     }
 
+    @DataProvider(name = "queryInput")
+    public static Object[][] queryInput() {
+        return new Object[][]{
+                {"Gift Cards"}
+        };
+    }
+
     @Test
     public void verifyDealsTest() {
         WebDriver webDriver = getDriver();
@@ -57,6 +64,18 @@ public class DealsPageTest extends AbstractTest {
         ProductComponents productComponents = new ProductComponents(webDriver);
         productComponents.getTopCatagoryNames();
         sa.assertEquals(productComponents.getTopCatagoryNames(), 36);
+        sa.assertAll();
+    }
+
+    @Test(dataProvider = "queryInput")
+    public void verfiyTodaysDeal(String input) {
+        WebDriver webDriver = getDriver();
+        DealsPage dealsPage = new DealsPage(webDriver);
+        dealsPage.open();
+        SoftAssert sa = new SoftAssert();
+        DealsComponents dealsComponents = new DealsComponents(webDriver);
+        sa.assertFalse(dealsComponents.clickMyId(input), "Gift card Page is working");
+        dealsComponents.clickMyId(input);
         sa.assertAll();
     }
 }
